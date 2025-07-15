@@ -28,10 +28,8 @@ To identify the issue, we used **Azure Application Insights** and examined the *
 
 ### Findings:
 
-- When storing app files, the Logic App accessed:
-  ```
-  <storage_account_name>.blob.core.windows.net
-  ```
+- When storing app files, the Logic App accessed: ```<storage_account_name>.blob.core.windows.net ```
+  
   ✔️ This resolved correctly through the **private endpoint**.
 
 - But when using the **“Create blob (V2)”** action, it attempted access via the **Managed Connector**, which internally uses the **Microsoft Multi-Tenant Gateway**.
