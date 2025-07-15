@@ -1,3 +1,10 @@
+---
+title: "Issue Resolution: Logic App Failing to Access Azure Blob Storage via Connector"
+date: "2025-01-15"
+author: "Your Name"
+excerpt: "How to fix common Logic App blob storage issues"
+tags: ["azure", "logic-apps", "troubleshooting"]
+---
 
 # 🧩 Issue Resolution: Logic App Failing to Access Azure Blob Storage via Connector
 
@@ -28,8 +35,10 @@ To identify the issue, we used **Azure Application Insights** and examined the *
 
 ### Findings:
 
-- When storing app files, the Logic App accessed: ```<storage_account_name>.blob.core.windows.net ```
-  
+- When storing app files, the Logic App accessed:
+  ```
+  <storage_account_name>.blob.core.windows.net
+  ```
   ✔️ This resolved correctly through the **private endpoint**.
 
 - But when using the **“Create blob (V2)”** action, it attempted access via the **Managed Connector**, which internally uses the **Microsoft Multi-Tenant Gateway**.
