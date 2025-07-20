@@ -9,8 +9,6 @@ tags: azure, logic-apps, troubleshooting
 
 # 🧩 Issue Resolution: Logic App Failing to Access Azure Blob Storage via Connector
 
-> **Published:** July 15, 2025 | **Category:** Azure
-
 While working on a Logic App solution, we encountered a subtle but impactful issue: the workflow could write to Azure Blob Storage but failed when trying to read or manipulate blob data via a Logic App action. Here’s a breakdown of the problem, how we debugged it, and what ultimately resolved it.
 
 ---
