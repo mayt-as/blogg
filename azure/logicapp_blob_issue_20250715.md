@@ -2,7 +2,7 @@
 META
 title: Logic App Blob Storage Issue - July 2025
 date: 2025-07-15
-author: Your Name
+author: Satyam Pandey
 excerpt: Troubleshooting Azure Logic App blob connectivity issues
 tags: azure, logic-apps, troubleshooting
 -->
